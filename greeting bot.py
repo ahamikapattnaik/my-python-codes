@@ -12,10 +12,9 @@ def greeting_bot():
 
     #some welcome messages
     welcome_messages = [
-        f"Hello {first_name}! Welcome to your fourth assignment. Make sure to answer every question!",
-        f"Welcome {first_name} to your fourth assignment in ML4PA program at Spartificial. Be as creative as you can in coding problems!",
-        f"Hello {first_name}! Welcome to your fourth assignment. Happy Coding!",
-        f"Hello {first_name}! Welcome to your fourth assignment. Did you enjoy the training program so far?",
+        f"Hello {first_name}! Make sure to practice as many questions possible!",
+        f"Welcome {first_name} to GitHub. Be as creative as you can in coding problems!",
+        f"Hello {first_name}! Happy Coding!",
     ]
 
     #display a random message
