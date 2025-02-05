@@ -1,0 +1,16 @@
+from sympy import Piecewise as pw
+from sympy.abc import x
+from sympy import *
+def hrfs(f,L):
+  a=(x>=0) & (x<=L)
+  b=(x>=-L) & (x<0)
+  g = f.subs(x,-x)
+  fodd=pw((f,a),(-g,b))
+  feven=pw((f,a),(g,b))
+  fsin=pw.fourier_series(fodd,(x,-L,L))
+  print("The HRSS is")
+  pprint(fsin.truncate(n=4))
+  fcos=pw.fourier_series(feven,(x,-L,L))
+  print("The HRCS is")
+  pprint(fcos.truncate(n=4))
+hrfs(x,2)
